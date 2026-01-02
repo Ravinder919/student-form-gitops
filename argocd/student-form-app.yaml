@@ -4,13 +4,14 @@ metadata:
   name: student-form
   namespace: argocd
 spec:
+  project: default
   source:
-    repoURL: https://github.com/YOUR_NAME/student-form-gitops.git
+    repoURL: https://github.com/YOUR_GITHUB_USERNAME/student-form-gitops.git
     targetRevision: main
     path: apps
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: dev
   syncPolicy:
     automated:
       prune: true

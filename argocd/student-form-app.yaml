@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/sahu04/student-form-gitops.git
-    targetRevision: main
+    targetRevision: master     # 🔥 FIX HERE
     path: apps
   destination:
     server: https://kubernetes.default.svc
@@ -16,3 +16,6 @@ spec:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+

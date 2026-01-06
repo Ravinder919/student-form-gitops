@@ -11,7 +11,7 @@ spec:
       labels: { app: backend }
     spec:
       containers:
-      - image: 605518582307.dkr.ecr.us-west-1.amazonaws.com/student-backend:latest
+      - image: 605518582307.dkr.ecr.us-west-1.amazonaws.com/backend:latest
         name: backend
         ports:
         - containerPort: 3000

@@ -11,7 +11,7 @@ spec:
       labels: { app: frontend }
     spec:
       containers:
-      - image: 953242055866.dkr.ecr.us-east-1.amazonaws.com/frontend:latest
+      - image: 605518582307.dkr.ecr.us-west-1.amazonaws.com/front:latest
         name: frontend
         ports:
         - containerPort: 80

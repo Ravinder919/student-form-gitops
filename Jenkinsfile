@@ -63,7 +63,7 @@ pipeline {
 
                 aws eks update-kubeconfig \
                 --region ${AWS_REGION} \
-                --name fullstack-cluster
+                --name cluster
                 """
 
               
